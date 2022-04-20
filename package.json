@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/CommieDog/readme-generator/issues"
   },
-  "homepage": "https://github.com/CommieDog/readme-generator#readme"
+  "homepage": "https://github.com/CommieDog/readme-generator#readme",
+  "dependencies": {
+    "inquire": "^0.4.8"
+  }
 }

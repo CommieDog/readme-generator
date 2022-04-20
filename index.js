@@ -1,1 +1,3 @@
-console.log("Hello world!");
+const inquire = require("inquire");
+
+console.log(inquire);
