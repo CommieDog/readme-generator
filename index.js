@@ -1,3 +1,3 @@
-const inquire = require("inquire");
+const inquirer = require("inquirer");
 
-console.log(inquire);
+console.log(inquirer);

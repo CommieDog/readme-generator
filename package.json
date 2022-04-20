@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/CommieDog/readme-generator#readme",
   "dependencies": {
-    "inquire": "^0.4.8"
+    "inquirer": "^8.2.2"
   }
 }
