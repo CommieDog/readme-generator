@@ -1,4 +1,5 @@
 const inquirer = require("inquirer");
+const fs = require("fs");
 
 inquirer.prompt(
     [
@@ -52,7 +53,11 @@ inquirer.prompt(
 ).then(response =>
 {
     let readme = generateReadme(response);
-    console.log(readme);
+    console.log("\nWriting readme file...");
+    fs.writeFile("./GENERATED.md", readme, (err) =>
+    {
+        err ? console.error(err) : console.log("Readme file saved as GENERATED.md!")
+    })
 })
 
 function generateReadme(data)
