@@ -69,6 +69,16 @@ ${getLicenseBadge(license)}
 ${description}
 
 
+## Tabe of Contents
+
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contribution Guidelines](#contribution-guidelines)
+* [Testing](#testing)
+* [Questions](#questions)
+
+
 ## Installation
 
 ${installInstructions}
