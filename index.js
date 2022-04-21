@@ -1,6 +1,7 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 
+//Prompt the user for readme input
 inquirer.prompt(
     [
         {
@@ -60,6 +61,11 @@ inquirer.prompt(
     })
 })
 
+/**
+ * Generates a readme from user input data in Markdown format
+ * @param {*} data an object containing fileds to be used in readme generation
+ * @returns a string with the contents of the readme
+ */
 function generateReadme(data)
 {
     // Unpack data fields
@@ -115,6 +121,11 @@ ${testInstructions}
 * [My email address](${email})`;
 }
 
+/**
+ * Gets the license badge markdown code for a given license
+ * @param {*} license the name of the license
+ * @returns a string with the license badge code
+ */
 function getLicenseBadge(license)
 {
     switch (license) {
@@ -135,6 +146,11 @@ function getLicenseBadge(license)
     }
 }
 
+/**
+ * Gets the full name of a given license
+ * @param {*} license the name of the license
+ * @returns a string of the full license name
+ */
 function getLicenseLongName(license)
 {
     switch (license) {
