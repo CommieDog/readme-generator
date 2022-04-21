@@ -33,6 +33,12 @@ inquirer.prompt(
             message: "Enter instructions for testing your project:"
         },
         {
+            type: "list",
+            name: "license",
+            message: "Enter a license for testing your project:",
+            choices: ["Apache 2.0", "CC0", "Eclipse Public 1.0", "ISC", "MIT", "Mozilla Public 2.0", "The Unlicense"]
+        },
+        {
             type: "input",
             name: "guthubUseranme",
             message: "Enter your GitHub username:"
