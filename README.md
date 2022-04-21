@@ -5,9 +5,10 @@ A simple Node.js application for generating readme files
 ## Introduction
 The Readme Generator is a simple tool to automate the process of generating readme documentation for coding projects. It is a Node.js command-line application that prompts the user for a few simple inputs and uses them to generate a readme file.
 
-![Screencap of Weather Companion showing typical use case.](https://github.com/CommieDog/weather-companion/blob/main/assets/images/readme/weather-companion-screencap.gif)
+[Video of Readme Generator showing typical use case](https://drive.google.com/file/d/18vTiRutUYDf4jzqsnBkh5FgCN4CBUXQ6/view)
 
-A sample deployment of the website is available on [GitHub Pages](https://commiedog.github.io/weather-companion/).
+![Screenshot of sample readme generated](https://github.com/CommieDog/readme-generator/blob/main/assets/images/readme/sample-readme-screenshot.jpg)
+Screenshot of sample readme generated
 
 
 ## Table of Contents
