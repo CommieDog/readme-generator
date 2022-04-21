@@ -40,7 +40,7 @@ inquirer.prompt(
         },
         {
             type: "input",
-            name: "guthubUseranme",
+            name: "githubUseranme",
             message: "Enter your GitHub username:"
         },
         {
@@ -51,5 +51,49 @@ inquirer.prompt(
     ]
 ).then(response =>
 {
-    console.log(response);
+    let readme = generateReadme(response);
+    console.log(readme);
 })
+
+function generateReadme(data)
+{
+    // Unpack data fields
+    const {title, description, installInstructions, usageInstructions, contributeGuildelines, testInstructions, license, githubUseranme, email} = data;
+
+    return `# ${title}
+
+## Description
+
+${description}
+
+
+## Installation
+
+${installInstructions}
+
+
+## Usage
+
+${usageInstructions}
+
+
+## License
+
+${license}
+
+
+## Contribution Guidelines
+
+${contributeGuildelines}
+
+
+## Testing
+
+${testInstructions}
+
+
+## Questions
+
+* [My GitHub Profile](${githubUseranme})
+* [My email address](${email})`;
+}
