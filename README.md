@@ -12,7 +12,7 @@ A sample deployment of the website is available on [GitHub Pages](https://commie
 
 ## Table of Contents
 
-* [Description](#description)
+* [Usage](#usage)
 * [Features](#features)
 * [Technologies Used](#technologies-used)
 * [Future Work](#future-work)
@@ -27,7 +27,11 @@ The Readme Generator starts by prompting the user for information about the proj
 
 ## Features
 
-* A
+* Basic command line interface
+* Several common licenses to choose from
+* Common readme sections
+* Use of licence badges
+* Table of contents
 
 
 ## Technologies Used
@@ -39,7 +43,7 @@ The Readme Generator starts by prompting the user for information about the proj
 
 ## Future Work
 
-A
+The feature I would most like to add is the ability to skip the generation of certain sections by skipping the relevant prompt. That would allow for the addition of less commonly used readme sections to the application.
 
 
 ## Author
