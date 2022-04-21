@@ -62,6 +62,8 @@ function generateReadme(data)
 
     return `# ${title}
 
+${getLicenseBadge(license)}
+
 ## Description
 
 ${description}
@@ -79,7 +81,7 @@ ${usageInstructions}
 
 ## License
 
-${license}
+Licensed under ${getLicenseLongName(license)}.
 
 
 ## Contribution Guidelines
@@ -96,4 +98,44 @@ ${testInstructions}
 
 * [My GitHub Profile](${githubUseranme})
 * [My email address](${email})`;
+}
+
+function getLicenseBadge(license)
+{
+    switch (license) {
+        case "Apache 2.0":
+            return "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
+        case "CC0":
+            return "[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)";
+        case "Eclipse Public 1.0":
+            return "[![License](https://img.shields.io/badge/License-EPL_1.0-red.svg)](https://opensource.org/licenses/EPL-1.0)";
+        case "ISC":
+            return "[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)";
+        case "MIT":
+            return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
+        case "Mozilla Public 2.0":
+            return "[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)";
+        case "The Unlicense":
+            return "[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)";
+    }
+}
+
+function getLicenseLongName(license)
+{
+    switch (license) {
+        case "Apache 2.0":
+            return "the Apache 2.0 License";
+        case "CC0":
+            return "the CC0 License";
+        case "Eclipse Public 1.0":
+            return "the Eclipse Public License 1.0";
+        case "ISC":
+            return "the ISC License";
+        case "MIT":
+            return "the MIT License";
+        case "Mozilla Public 2.0":
+            return "the Mozilla Public License 2.0";
+        case "The Unlicense":
+            return "The Unlicense";
+    }
 }
