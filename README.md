@@ -20,9 +20,9 @@ A sample deployment of the website is available on [GitHub Pages](https://commie
 * [License](#license)
 
 
-## Description
+## Usage
 
-A
+The Readme Generator starts by prompting the user for information about the project. Most of the prompts are simple text responses; only the license prompt is more complex, asking the user to choose a license from a list. Upon entering all the data, the Readme Generator writes a GENERATED.md file to the directory where the Readme Generator is installed, creating a Markdown-formated readme with all of the common sections and a table of contents to navigate them.
 
 
 ## Features
@@ -50,4 +50,4 @@ John Netzel
 * [GitHub](https://github.com/CommieDog)
 
 ## License
-&copy; 2022 John Netzel. All Rights Reserved.
+&copy; 2022 John Netzel. All Rights Reserved. Licenced under the terms of the MIT License.

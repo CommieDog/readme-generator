@@ -37,7 +37,7 @@ inquirer.prompt(
         {
             type: "list",
             name: "license",
-            message: "Enter a license for testing your project:",
+            message: "Enter a license for your project:",
             choices: ["Apache 2.0", "CC0", "Eclipse Public 1.0", "ISC", "MIT", "Mozilla Public 2.0", "The Unlicense"]
         },
         {
